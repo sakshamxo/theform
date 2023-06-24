@@ -1,0 +1,547 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "gilroy";
+}
+@font-face {
+    font-family: "gilroy bold";
+    src: url(/fonts/Gilroy-Bold.otf);
+}
+@font-face {
+    font-family: "gilroy medium";
+    src: url(/fonts/Gilroy-Medium.otf);
+}
+@font-face {
+    font-family: "gilroy semibold";
+    src: url(/fonts/Gilroy-Semibold.otf);
+}
+@font-face {
+    font-family: "gilroy light";
+    src: url(/fonts/Gilroy-Light.otf);
+}
+@font-face {
+    font-family: "monument regular";
+    src: url(/fonts/MonumentExtended-Regular.otf);
+}
+@font-face {
+    font-family: "monument ultrabold";
+    src: url(/fonts/MonumentExtended-Ultrabold.otf);
+}
+@font-face {
+    font-family: "voyage";
+    src: url(/fonts/Voyage-Regular.ttf);
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#mmenu{
+    width: 100%;
+    height: 100vh;
+    background-color: #222;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 9999;
+    position: fixed;
+    top: -100%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .5s;
+}
+#picb{
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    left: 35%;
+    top: 0%;
+    display: flex;
+    overflow: hidden;
+}
+#close i{
+    font-size: 3vw;
+    color: #fff;
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    z-index: 9999;
+}
+.picbo{
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    object-fit: cover;
+    object-position: center;
+}
+.picbo img{
+    width: 100%;
+    height: 100%;
+
+}
+#mmenui a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-family: "monument";
+    font-size: 4vw;
+}
+#mmenui{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+#main{
+    width: 100%;
+    height:100vh;
+    background-color: rgb(138, 108, 70);
+    position: fixed;
+}
+#nav{
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    position: fixed;
+    z-index: 999;
+    font-size: 3vh;
+    color: #fff;
+}
+#main h1{
+    position: relative;
+    display: flex;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%,-50%);
+    font-size: 30vw;
+    text-transform: uppercase;
+    color: #fff;
+}
+#main p{
+    width: 15vw;
+    font-weight: 400;
+    position: absolute;
+    top: 2vh;
+    left: 96vh;
+    font-size: 1vw;
+}
+#main span{
+    z-index: 70;
+    text-shadow: 10px 10px 30px #000;
+}
+#main1{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #222;
+    position: absolute;
+    margin-top: 100vh;
+}
+#root{
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%,0) rotate(180deg);
+    mix-blend-mode: soft-light;
+    z-index: 10;
+}
+#banner{
+    width: 25vw;
+    height: 30vh;
+    transform:translate(-50%,-50%) rotate(-20deg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 60 ;
+}
+#main h1 span:nth-child(1){
+    z-index: 50;
+}
+#cas{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+#cass{
+    width: 35vw;
+    height: 65vh;
+    background-color: burlywood;
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#cir{
+    width: 80%;
+    height: 85%;
+    background-color: #222;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#incir{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(255, 136, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+#incir h5{
+    font-size: 10px;
+    font-family: "tosca zero";
+    color: #fff;
+    opacity: 0;
+}
+#cas h1 span{
+    margin-left: 10vw;
+}
+#cas h1{
+    padding: 20px 40px;
+    font-size: 30px;
+    color: #fff;
+}
+#cass h2{
+    position: absolute;
+    left: 93%;
+    top: 30%;
+    width: 25vw;
+    color: #fff;
+}
+#cass h3{
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    font-size: 3vw;
+    color: #fff;
+}
+#line{
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: 85%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+#cir image{
+   width: 100%;
+   height: 100%;
+
+}
+#line p{
+    font-size: 1vw;
+}
+.te{
+    margin: 30px;
+    color: #fff;
+}
+#p1{
+    width: 100%;
+    height: 100%;
+    
+}
+#p2{
+    width: 80%;
+    height: 80%;
+     position: absolute; 
+    
+}
+#p3{
+    width: 60%;
+    height: 60%;
+     position: absolute; 
+  
+   
+}
+
+#con{
+    width: 100%;
+    height: 80vh;
+    background-color: #222;
+    position: relative;
+    overflow : hidden;
+}
+#conta{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #222;
+    position: relative;
+}
+#conta h1{
+    font-size: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    
+}
+#conta span{
+    font-family: "Voyage";
+    font-weight: 300;
+}
+#phic{
+    width: 20vw;
+    height: 60vh;
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    object-fit: cover;
+    object-position: center;
+}
+#pics{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(0,-50%);
+}
+.pico{
+    width: 20vw;
+    margin-right: 10px;
+    height: 60vh;
+    background-color: yellow;
+   
+}
+#image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.img{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    opacity: 0;
+    margin-left: 10px;
+    object-fit: cover;
+    object-position: center;
+}
+.img img{
+    width: 100%;
+    height: 100%;
+}
+#footer{
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    position: relative;
+}
+#phoo{
+    width: 35%;
+    height: 60%;
+    position: absolute;
+    top: 7%;
+    left: 7%;
+    display: flex;
+    overflow: hidden;
+}
+#menu{
+    position: absolute;
+    top: 20%;
+    left: 60%;
+}
+#menu h5{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 4vw;
+    font-family: "monument";
+    font-weight: 500;
+}
+#footer h1{
+    color: #fff;
+    font-size: 7vw;
+    width: 1vw;
+    position: absolute;
+    top: 65%;
+    left: 4%;
+    font-weight: 500;
+}
+.pio{
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+.pio img{
+    width: 100%;
+    height: 100%;
+}
+#progress{
+    width: 0%;
+    height: 7px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 99999;
+}
+#footer h1 span{
+    font-family: "voyage";
+    font-size: 7vw;
+}
+#phic img{
+    width: 100%;
+    height: 100%;
+
+}
+.pico img{
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+/*responsive*/
+
+
+
+
+@media(max-width: 550px){
+    #main h1{
+        display: block;
+        font-size: 60vw;
+        line-height: 200px;
+        align-items: center;
+        justify-content: center;
+    }
+    #banner{
+        width: 70%;
+        height: 50%;
+    }
+    #main p{
+        font-size: 2vw;
+        top: -13%;
+        left: 15%;
+        width: 40vw;
+        line-height: 15px;
+    }
+    #line p{
+        font-size: 2vw;
+    }
+    #cas h1{
+        padding: 24px 14px;
+        font-size: 26px;
+    }
+    #cas h1 span{
+        margin-left: 0;
+    }
+    #cass {
+        width: 93vw;
+        height: 62vh;;
+    }
+    #cass h2{
+        display: none;
+    }
+    #cass h3{
+        font-size: 6vw;
+    }
+    #line{
+        top: 84%;
+    }
+    #footer{
+        height: 80vh;
+    }
+    #footer h1{
+        font-size: 13vw;
+        top: 75%;
+        left: 7%;
+    }
+    #phoo {
+        width: 70%;
+        height: 50%;
+        top: 25%;
+        left: 15%;
+    }
+    #menu {
+        top: 3%;
+        left: 26%;
+    }
+    #menu h5{
+        font-size: 7vw;
+        font-weight: 500;
+    }
+    #p1 {
+        width: 111%;
+        height: 99%;
+    }
+    #p2 {
+        width: 77%;
+        height: 76%;
+    }
+    #p3 {
+        width: 47%;
+        height: 47%;
+    }
+    #cir {
+        width: 92%;
+        height: 92%;
+    }
+    #phic {
+        width: 61vw;
+        height: 40vh;
+    }
+    .pico{
+        width: 61vw;
+        height: 40vh;
+    }
+    .img {
+        width: 5vw;
+        height: 5vh;
+    }
+    #picb {
+        width: 71%;
+        height: 100%;
+        left: 38%;
+        top: 0%;
+       
+    }
+    #mmenui {
+        left: 3%;
+    }
+    #mmenui a {
+        font-size: 6vw;
+    }
+    #close i {
+        font-size: 6vw;
+        z-index: 9999;
+    }
+    .picbo {
+        width: 125%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
